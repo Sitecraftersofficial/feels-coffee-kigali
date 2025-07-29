@@ -4,7 +4,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-primary text-primary-foreground relative overflow-hidden">
+    <footer className="bg-background border-t border-border text-foreground relative overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-2 bg-gradient-coffee"></div>
       <div className="absolute -top-8 -right-8 opacity-10">
@@ -28,7 +28,7 @@ const Footer = () => {
                 <p className="font-dancing text-lg opacity-80 -mt-1">Kigali</p>
               </div>
             </div>
-            <p className="font-inter text-primary-foreground/80 leading-relaxed mb-6 max-w-md">
+            <p className="font-inter text-muted-foreground leading-relaxed mb-6 max-w-md">
               Where every bite and sip feels like home. Experience Kigali's coziest café with strong Wi-Fi, 
               friendly service, and beautiful terrace views in the heart of Rugando.
             </p>
@@ -37,19 +37,19 @@ const Footer = () => {
                 href="https://instagram.com/feels_coffeexstudio" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-primary-foreground/10 hover:bg-primary-foreground/20 p-3 rounded-full transition-all duration-300 hover-lift group"
+                className="bg-muted hover:bg-muted/80 p-3 rounded-full transition-all duration-300 hover-lift group"
               >
                 <Instagram className="h-5 w-5 group-hover:scale-110 transition-transform" />
               </a>
               <a 
                 href="#" 
-                className="bg-primary-foreground/10 hover:bg-primary-foreground/20 p-3 rounded-full transition-all duration-300 hover-lift group"
+                className="bg-muted hover:bg-muted/80 p-3 rounded-full transition-all duration-300 hover-lift group"
               >
                 <Facebook className="h-5 w-5 group-hover:scale-110 transition-transform" />
               </a>
               <a 
                 href="#" 
-                className="bg-primary-foreground/10 hover:bg-primary-foreground/20 p-3 rounded-full transition-all duration-300 hover-lift group"
+                className="bg-muted hover:bg-muted/80 p-3 rounded-full transition-all duration-300 hover-lift group"
               >
                 <Twitter className="h-5 w-5 group-hover:scale-110 transition-transform" />
               </a>
@@ -64,32 +64,32 @@ const Footer = () => {
             </h4>
             <ul className="space-y-3">
               <li>
-                <a href="#home" className="font-inter text-primary-foreground/80 hover:text-primary-foreground transition-colors story-link">
+                <a href="#home" className="font-inter text-muted-foreground hover:text-foreground transition-colors story-link">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#menu" className="font-inter text-primary-foreground/80 hover:text-primary-foreground transition-colors story-link">
+                <a href="#menu" className="font-inter text-muted-foreground hover:text-foreground transition-colors story-link">
                   Menu
                 </a>
               </li>
               <li>
-                <a href="#about" className="font-inter text-primary-foreground/80 hover:text-primary-foreground transition-colors story-link">
+                <a href="#about" className="font-inter text-muted-foreground hover:text-foreground transition-colors story-link">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#gallery" className="font-inter text-primary-foreground/80 hover:text-primary-foreground transition-colors story-link">
+                <a href="#gallery" className="font-inter text-muted-foreground hover:text-foreground transition-colors story-link">
                   Gallery
                 </a>
               </li>
               <li>
-                <a href="#location" className="font-inter text-primary-foreground/80 hover:text-primary-foreground transition-colors story-link">
+                <a href="#location" className="font-inter text-muted-foreground hover:text-foreground transition-colors story-link">
                   Location & Hours
                 </a>
               </li>
               <li>
-                <a href="#contact" className="font-inter text-primary-foreground/80 hover:text-primary-foreground transition-colors story-link">
+                <a href="#contact" className="font-inter text-muted-foreground hover:text-foreground transition-colors story-link">
                   Contact
                 </a>
               </li>
@@ -101,28 +101,28 @@ const Footer = () => {
             <h4 className="font-playfair text-xl font-semibold mb-6">Contact Info</h4>
             <div className="space-y-4">
               <div className="flex items-start space-x-3 group">
-                <MapPin className="h-5 w-5 text-primary-foreground/60 group-hover:text-accent transition-colors mt-1" />
-                <span className="font-inter text-primary-foreground/80 text-sm leading-relaxed">
+                <MapPin className="h-5 w-5 text-muted-foreground group-hover:text-accent transition-colors mt-1" />
+                <span className="font-inter text-muted-foreground text-sm leading-relaxed">
                   KG-628 St, Rugando, Kigali
                 </span>
               </div>
               <div className="flex items-center space-x-3 group">
-                <Phone className="h-5 w-5 text-primary-foreground/60 group-hover:text-accent transition-colors" />
-                <span className="font-inter text-primary-foreground/80 text-sm">
+                <Phone className="h-5 w-5 text-muted-foreground group-hover:text-accent transition-colors" />
+                <span className="font-inter text-muted-foreground text-sm">
                   +250 788 123 456
                 </span>
               </div>
               <div className="flex items-center space-x-3 group">
-                <Mail className="h-5 w-5 text-primary-foreground/60 group-hover:text-accent transition-colors" />
-                <span className="font-inter text-primary-foreground/80 text-sm">
+                <Mail className="h-5 w-5 text-muted-foreground group-hover:text-accent transition-colors" />
+                <span className="font-inter text-muted-foreground text-sm">
                   hello@feelscoffee.rw
                 </span>
               </div>
             </div>
             
-            <div className="mt-8 p-4 bg-primary-foreground/10 rounded-lg backdrop-blur-sm">
+            <div className="mt-8 p-4 bg-muted/50 rounded-lg backdrop-blur-sm">
               <h5 className="font-playfair font-semibold mb-3 text-accent">Business Hours</h5>
-              <p className="font-inter text-primary-foreground/80 text-sm">
+              <p className="font-inter text-muted-foreground text-sm">
                 <span className="font-dancing text-lg block">Every Day</span>
                 <span className="font-bold">7:30 AM - 11:00 PM</span>
               </p>
@@ -131,17 +131,17 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-primary-foreground/20 mt-12 pt-8">
+        <div className="border-t border-border mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="font-inter text-primary-foreground/60 text-sm text-center md:text-left">
+            <p className="font-inter text-muted-foreground text-sm text-center md:text-left">
               © {currentYear} Feels Coffee Kigali. All rights reserved.
               <span className="font-dancing text-accent mx-2">Made with ❤️ in Rwanda</span>
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="font-inter text-primary-foreground/60 hover:text-primary-foreground text-sm transition-colors story-link">
+              <a href="#" className="font-inter text-muted-foreground hover:text-foreground text-sm transition-colors story-link">
                 Privacy Policy
               </a>
-              <a href="#" className="font-inter text-primary-foreground/60 hover:text-primary-foreground text-sm transition-colors story-link">
+              <a href="#" className="font-inter text-muted-foreground hover:text-foreground text-sm transition-colors story-link">
                 Terms of Service
               </a>
             </div>
