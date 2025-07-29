@@ -107,7 +107,7 @@ const Header = () => {
                 <button
                   key={item.name}
                   onClick={() => handleNavClick(item.href)}
-                  className="block w-full text-left font-inter text-sm text-foreground hover:text-primary hover:bg-secondary/30 transition-all duration-200 font-medium py-2 px-2 rounded-lg animate-slide-in-left hover:scale-105"
+                  className="block w-full text-left font-inter text-sm text-foreground hover:text-primary hover:bg-secondary/30 transition-all duration-200 font-medium py-2 px-2 rounded-lg animate-slide-in-left hover:scale-105 md:hover:scale-[1.02]"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   {item.name}
@@ -115,7 +115,7 @@ const Header = () => {
               ))}
               <Button 
                 variant="default" 
-                className="w-full bg-gradient-coffee text-primary-foreground font-inter font-semibold animate-slide-in-left mt-8 hover:shadow-warm hover:scale-105 transition-all duration-200" 
+                className="w-full bg-gradient-coffee text-primary-foreground font-inter font-semibold animate-slide-in-left mt-8 hover:shadow-warm hover:scale-105 md:hover:scale-[1.02] transition-all duration-200" 
                 style={{ animationDelay: '0.6s' }}
                 onClick={() => handleNavClick('#contact')}
               >
