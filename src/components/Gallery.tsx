@@ -158,7 +158,10 @@ const Gallery = () => {
               >
                 View Our Menu
               </Button>
-              <Button variant="outline">
+              <Button 
+                variant="outline"
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 Make a Reservation
               </Button>
             </div>

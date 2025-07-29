@@ -9,83 +9,111 @@ const Menu = () => {
       id: 'coffee',
       name: 'Coffee & Espresso',
       icon: '☕',
-      featured: true,
       items: [
-        { name: 'Espresso', description: 'Rich, concentrated coffee shot', price: '800 RWF', popular: true },
-        { name: 'Americano', description: 'Espresso with hot water', price: '1,200 RWF' },
-        { name: 'Cappuccino', description: 'Espresso with steamed milk and foam', price: '1,500 RWF', popular: true },
-        { name: 'Latte', description: 'Espresso with steamed milk', price: '1,600 RWF' },
-        { name: 'Macchiato', description: 'Espresso "marked" with foam', price: '1,400 RWF' },
-        { name: 'Mocha', description: 'Espresso with chocolate and milk', price: '1,800 RWF' },
-        { name: 'Rwandan Single Origin', description: 'Local premium coffee beans', price: '2,000 RWF', signature: true }
+        { name: 'Espresso Single', description: 'Rich, full-bodied shot of coffee', price: '1,500 RWF', popular: true },
+        { name: 'Espresso Double', description: 'Double shot for extra strength', price: '2,000 RWF' },
+        { name: 'Americano', description: 'Espresso with hot water', price: '2,500 RWF', popular: true },
+        { name: 'Macchiato', description: 'Espresso with a dollop of foam', price: '2,000 RWF' },
+        { name: 'Cortado', description: 'Equal parts espresso and warm milk', price: '3,000 RWF' },
+        { name: 'Cappuccino', description: 'Espresso with steamed milk and foam', price: '3,000 RWF', popular: true },
+        { name: 'Café Latte', description: 'Espresso with steamed milk', price: '3,000 RWF' },
+        { name: 'Mocha', description: 'Espresso with chocolate and steamed milk', price: '3,500 RWF', signature: true },
+        { name: 'Vanilla Latte', description: 'Latte with vanilla syrup', price: '3,500 RWF' },
+        { name: 'Caramel Macchiato', description: 'Macchiato with caramel', price: '3,500 RWF' },
+        { name: 'Cinnamon Latte', description: 'Latte with cinnamon spice', price: '3,500 RWF' }
       ]
     },
     {
-      id: 'beverages',
-      name: 'Teas & Other Beverages',
+      id: 'tea',
+      name: 'Tea & Chocolate',
       icon: '🍵',
       items: [
-        { name: 'Earl Grey Tea', description: 'Classic bergamot-scented black tea', price: '1,000 RWF' },
-        { name: 'Green Tea', description: 'Antioxidant-rich Japanese green tea', price: '1,000 RWF' },
-        { name: 'Chamomile Tea', description: 'Soothing herbal tea', price: '1,100 RWF' },
-        { name: 'Hot Chocolate', description: 'Rich chocolate with steamed milk', price: '1,500 RWF', popular: true },
-        { name: 'Fresh Orange Juice', description: 'Locally sourced oranges', price: '1,300 RWF' },
-        { name: 'Passion Fruit Juice', description: 'Fresh Rwandan passion fruit', price: '1,400 RWF', signature: true },
-        { name: 'Iced Tea', description: 'Refreshing cold-brewed tea', price: '1,200 RWF' }
+        { name: 'African Tea', description: 'Traditional African tea blend', price: '2,500 RWF' },
+        { name: 'English Tea', description: 'Classic black tea', price: '2,500 RWF' },
+        { name: 'Spiced Tea', description: 'Tea with warming spices', price: '3,000 RWF' },
+        { name: 'Herbal Tea', description: 'Caffeine-free herbal blend', price: '2,500 RWF' },
+        { name: 'Feels Formula', description: 'Our signature tea blend', price: '3,500 RWF', signature: true },
+        { name: 'Hot Chocolate', description: 'Rich chocolate drink', price: '3,000 RWF' }
       ]
     },
     {
-      id: 'smoothies',
-      name: 'Smoothies & Juices',
+      id: 'iced-drinks',
+      name: 'Iced Coffee & Tea',
+      icon: '🧊',
+      items: [
+        { name: 'Iced Americano', description: 'Chilled americano with ice', price: '3,000 RWF' },
+        { name: 'Iced Latte', description: 'Cold latte with ice', price: '3,500 RWF', popular: true },
+        { name: 'Iced Vanilla Latte', description: 'Iced latte with vanilla', price: '3,700 RWF' },
+        { name: 'Iced Mocha', description: 'Cold chocolate coffee', price: '3,700 RWF' },
+        { name: 'Iced Caramel Macchiato', description: 'Iced macchiato with caramel', price: '3,700 RWF' },
+        { name: 'Take me to Feels', description: 'Our signature iced tea', price: '3,000 RWF', signature: true },
+        { name: 'Flavored Iced Tea', description: 'Passion or Pineapple', price: '2,500 RWF' },
+        { name: 'Iced Herbal Tea', description: 'Peppermint or Green Tea', price: '2,500 RWF' }
+      ]
+    },
+    {
+      id: 'juices',
+      name: 'Fresh Juices & Smoothies',
       icon: '🥤',
       items: [
-        { name: 'Tropical Smoothie', description: 'Mango, pineapple, and banana', price: '2,500 RWF', popular: true },
-        { name: 'Berry Blast', description: 'Mixed berries with yogurt', price: '2,600 RWF' },
-        { name: 'Green Goddess', description: 'Spinach, apple, cucumber, and lime', price: '2,400 RWF' },
-        { name: 'Protein Power', description: 'Banana, peanut butter, and protein powder', price: '2,800 RWF' },
-        { name: 'Avocado Smoothie', description: 'Creamy avocado with honey', price: '2,700 RWF', signature: true },
-        { name: 'Fresh Watermelon Juice', description: 'Hydrating seasonal fruit', price: '1,500 RWF' }
+        { name: 'Mango Juice', description: 'Fresh squeezed mango', price: '4,000 RWF', popular: true },
+        { name: 'Passion Juice', description: 'Local passion fruit juice', price: '3,500 RWF' },
+        { name: 'Orange Juice', description: 'Fresh squeezed oranges', price: '4,500 RWF' },
+        { name: 'Tropical Juice', description: 'Mixed tropical fruits', price: '4,000 RWF' },
+        { name: 'Mango Berry Smoothie', description: 'Mango and berry blend', price: '4,500 RWF', popular: true },
+        { name: 'Green Detox Smoothie', description: 'Healthy green vegetable blend', price: '4,500 RWF', signature: true },
+        { name: 'Chocolate Twist Smoothie', description: 'Chocolate protein smoothie', price: '4,500 RWF' },
+        { name: 'Classic Lemonade', description: 'Fresh squeezed lemons', price: '2,500 RWF' },
+        { name: 'Strawberry Lemonade', description: 'Lemonade with fresh strawberries', price: '3,000 RWF' }
       ]
     },
     {
       id: 'breakfast',
       name: 'Breakfast',
-      icon: '🥐',
+      icon: '🍳',
       items: [
-        { name: 'Continental Breakfast', description: 'Croissant, jam, butter, and coffee', price: '3,500 RWF', popular: true },
-        { name: 'Eggs Benedict', description: 'Poached eggs with hollandaise sauce', price: '4,200 RWF' },
-        { name: 'Pancakes', description: 'Fluffy pancakes with syrup and fruit', price: '3,800 RWF', popular: true },
-        { name: 'Avocado Toast', description: 'Sourdough with smashed avocado', price: '3,000 RWF' },
-        { name: 'Omelette', description: 'Three eggs with cheese and herbs', price: '3,200 RWF' },
-        { name: 'French Toast', description: 'Brioche with cinnamon and vanilla', price: '3,600 RWF' },
-        { name: 'Fruit Bowl', description: 'Seasonal fresh fruits', price: '2,500 RWF' }
+        { name: 'Rolex', description: 'Ugandan rolled chapati with eggs', price: '3,500 RWF', popular: true },
+        { name: 'Pancake', description: 'Fluffy pancakes with syrup', price: '7,000 RWF' },
+        { name: 'French Toast', description: 'Classic French toast', price: '3,500 RWF' },
+        { name: 'Morning Combo', description: 'Complete breakfast combo', price: '8,000 RWF', signature: true },
+        { name: 'Plain Omelet', description: 'Simple three-egg omelet', price: '4,000 RWF' },
+        { name: 'Special Omelet', description: 'Omelet with your choice of fillings', price: '5,000 RWF' },
+        { name: 'Ham & Cheese Sandwich', description: 'Grilled sandwich with ham and cheese', price: '5,000 RWF' },
+        { name: 'Avocado & Toast', description: 'Smashed avocado on artisan bread', price: '2,500 RWF' },
+        { name: 'Eggs & Croissant', description: 'Fresh eggs with buttery croissant', price: '5,000 RWF' }
       ]
     },
     {
       id: 'mains',
-      name: 'Lunch & Dinner',
+      name: 'Main Dishes',
       icon: '🍽️',
       items: [
-        { name: 'Ubugari & Beef Stew', description: 'Traditional Rwandan polenta with tender beef', price: '4,500 RWF', signature: true },
-        { name: 'Grilled Tilapia', description: 'Fresh fish with rice and vegetables', price: '5,200 RWF', popular: true },
-        { name: 'Chicken Curry', description: 'Aromatic curry with basmati rice', price: '4,800 RWF' },
-        { name: 'Vegetarian Pasta', description: 'Penne with seasonal vegetables', price: '4,000 RWF' },
-        { name: 'Club Sandwich', description: 'Triple-decker with chicken and bacon', price: '3,800 RWF', popular: true },
-        { name: 'Ugali & Sukuma Wiki', description: 'Cornmeal with collard greens', price: '3,200 RWF' },
-        { name: 'Beef Burger', description: 'Homemade patty with fries', price: '4,500 RWF' }
+        { name: 'Beef Burger', description: 'Homemade beef patty with sides', price: '6,000 RWF', popular: true },
+        { name: 'Chicken Burger', description: 'Grilled chicken burger', price: '6,000 RWF' },
+        { name: 'Grilled Chicken Breast', description: 'Served with chips & salads', price: '7,000 RWF' },
+        { name: 'Grilled Fillet Steak', description: 'Premium beef fillet', price: '7,500 RWF', signature: true },
+        { name: 'Chicken Alfredo', description: 'Creamy pasta with chicken', price: '7,500 RWF' },
+        { name: 'Spaghetti Bolognese', description: 'Traditional pasta with meat sauce', price: '6,000 RWF' },
+        { name: 'Grilled Fish Fillet', description: 'Tilapia served with chips & salad', price: '9,000 RWF' },
+        { name: 'Club Sandwich', description: 'Triple-decker with chicken and bacon', price: '6,500 RWF' },
+        { name: 'Chicken Quesadilla', description: 'Served with guacamole and salsa', price: '6,500 RWF' },
+        { name: 'Beef Stroganoff', description: 'Tender beef in creamy sauce', price: '8,000 RWF' }
       ]
     },
     {
       id: 'cocktails',
-      name: 'Evening Cocktails',
+      name: 'Cocktails & Alcoholic Drinks',
       icon: '🍹',
       items: [
-        { name: 'Kigali Sunset', description: 'Rum, passion fruit, and lime', price: '3,500 RWF', signature: true },
-        { name: 'Rwandan Coffee Martini', description: 'Vodka with local coffee', price: '4,000 RWF', signature: true },
-        { name: 'Tropical Mojito', description: 'White rum with tropical fruits', price: '3,200 RWF', popular: true },
-        { name: 'Banana Beer Cocktail', description: 'Traditional urwagwa with a twist', price: '2,800 RWF' },
-        { name: 'Classic Gin & Tonic', description: 'Premium gin with tonic water', price: '3,000 RWF' },
-        { name: 'Local Wine', description: 'Rwandan red or white wine', price: '2,500 RWF' }
+        { name: 'Feels Mojito', description: 'Our signature mojito', price: '7,500 RWF', signature: true },
+        { name: 'Passion Fruit Margarita', description: 'Local passion fruit margarita', price: '10,000 RWF' },
+        { name: 'Long Island', description: 'Classic Long Island iced tea', price: '10,000 RWF' },
+        { name: 'Gin Tonic', description: 'Premium gin and tonic', price: '7,500 RWF' },
+        { name: 'White Wine', description: 'Glass of white wine', price: '7,000 RWF' },
+        { name: 'Red Wine', description: 'Glass of red wine', price: '7,000 RWF' },
+        { name: 'Heineken', description: 'Premium beer', price: '2,000 RWF', popular: true },
+        { name: 'Dawa', description: 'Traditional honey-based cocktail', price: '10,000 RWF' },
+        { name: 'Take me to Feels', description: 'Signature cocktail experience', price: '10,000 RWF', signature: true }
       ]
     }
   ];
