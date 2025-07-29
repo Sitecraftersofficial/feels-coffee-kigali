@@ -131,7 +131,7 @@ const Gallery = () => {
               <Button
                 variant="outline"
                 size="icon"
-                className="absolute -top-12 right-0 text-white border-white hover:bg-white hover:text-black"
+                className="absolute -top-12 right-0 text-foreground border-border hover:bg-secondary hover:text-foreground"
                 onClick={() => setSelectedImage(null)}
               >
                 <X className="h-4 w-4" />
