@@ -6,6 +6,10 @@
 All colors MUST be HSL.
 */
 
+* {
+  outline: 1px solid red; /* or a color of your choice */
+}
+
 @layer base {
   :root {
     /* Dark Coffee-Inspired Color Palette */
@@ -44,7 +48,11 @@ All colors MUST be HSL.
     /* Coffee-themed gradients for dark theme */
     --gradient-hero: linear-gradient(135deg, hsl(25 25% 8%), hsl(25 20% 12%));
     --gradient-warm: linear-gradient(180deg, hsl(25 20% 12%), hsl(25 15% 15%));
-    --gradient-coffee: linear-gradient(45deg, hsl(35 40% 85%), hsl(120 30% 60%));
+    --gradient-coffee: linear-gradient(
+      45deg,
+      hsl(35 40% 85%),
+      hsl(120 30% 60%)
+    );
 
     /* Shadows for dark theme */
     --shadow-warm: 0 10px 30px -10px hsl(0 0% 0% / 0.5);
@@ -52,9 +60,9 @@ All colors MUST be HSL.
     --shadow-coffee: 0 20px 40px -10px hsl(0 0% 0% / 0.6);
 
     /* Typography */
-    --font-display: 'Playfair Display', serif;
-    --font-body: 'Inter', sans-serif;
-    --font-accent: 'Dancing Script', cursive;
+    --font-display: "Playfair Display", serif;
+    --font-body: "Inter", sans-serif;
+    --font-accent: "Dancing Script", cursive;
 
     --radius: 0.5rem;
 
@@ -129,24 +137,24 @@ All colors MUST be HSL.
   .story-link {
     @apply relative inline-block after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-primary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left;
   }
-  
+
   .hover-lift {
     @apply transition-all duration-300 hover:-translate-y-2;
   }
-  
+
   .shadow-coffee {
     box-shadow: var(--shadow-coffee);
   }
-  
+
   .shadow-warm {
     box-shadow: var(--shadow-warm);
   }
-  
+
   .coffee-steam::before {
-    content: '';
+    content: "";
     @apply absolute -top-8 left-1/2 transform -translate-x-1/2 w-1 h-6 bg-gradient-to-t from-primary/20 to-transparent rounded-full animate-steam;
   }
-  
+
   .parallax-scroll {
     transform: translateZ(0);
   }
