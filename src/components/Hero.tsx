@@ -20,7 +20,7 @@ const Hero = () => {
           <div className="w-8 h-12 bg-accent rounded-full rotate-12 coffee-steam animate-float"></div>
         </div>
         
-        <h1 className="font-playfair text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-6 leading-tight animate-fade-in">
+        <h1 className="font-playfair text-yellow-100 text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-6 leading-tight animate-fade-in">
           Where every 
           <span className="block font-dancing text-accent text-5xl sm:text-6xl md:text-7xl lg:text-9xl -mt-2 mb-2">bite & sip</span>
           <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl">feels like home</span>
