@@ -31,19 +31,25 @@ const About = () => {
     <section id="about" className="py-20 bg-gradient-warm">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-            About Feels Coffee
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            More than just a café, Feels Coffee is Kigali's home away from home. We're passionate about 
-            creating a space where exceptional coffee meets genuine community spirit.
+          <div className="relative">
+            <h2 className="font-playfair text-4xl md:text-6xl font-bold text-primary mb-6 animate-fade-in">
+              About Feels Coffee
+            </h2>
+            <div className="absolute -top-4 -right-8 opacity-10">
+              <div className="w-16 h-20 bg-primary rounded-full transform rotate-12"></div>
+            </div>
+          </div>
+          <p className="font-inter text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            More than just a café, Feels Coffee is Kigali's 
+            <span className="font-dancing text-2xl text-accent mx-2">home away from home</span>. 
+            We're passionate about creating a space where exceptional coffee meets genuine community spirit.
           </p>
         </div>
 
         {/* Story Section */}
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
-          <div>
-            <h3 className="text-3xl font-bold text-primary mb-6">Our Story</h3>
+          <div className="animate-slide-in-left">
+            <h3 className="font-playfair text-3xl font-bold text-primary mb-6">Our Story</h3>
             <p className="text-lg text-foreground mb-4 leading-relaxed">
               Founded in the heart of Kigali, Feels Coffee was born from a simple vision: to create 
               a space where quality coffee, delicious food, and meaningful connections flourish together.
