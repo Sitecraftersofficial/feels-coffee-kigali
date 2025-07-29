@@ -23,46 +23,59 @@ const Header = () => {
     { name: 'Contact', href: '#contact' },
   ];
 
+  const handleNavClick = (href: string) => {
+    setIsMenuOpen(false);
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+    <header className={`fixed top-0 w-full z-50 transition-all duration-500 ${
       isScrolled 
         ? 'bg-background/95 backdrop-blur-md border-b border-border shadow-coffee' 
         : 'bg-transparent'
     }`}>
-      <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-2 group">
+          <div className="flex items-center space-x-3 group cursor-pointer" onClick={() => handleNavClick('#home')}>
             <div className="relative">
-              <Coffee className="h-8 w-8 text-primary transition-transform group-hover:rotate-12" />
+              <Coffee className="h-7 w-7 md:h-8 md:w-8 text-primary transition-transform group-hover:rotate-12" />
               <div className="absolute -top-1 -right-1 w-2 h-3 bg-accent/30 rounded-full animate-steam"></div>
             </div>
             <div>
-              <h1 className="font-playfair text-2xl font-bold text-primary">Feels Coffee</h1>
-              <p className="font-dancing text-xs text-muted-foreground -mt-1">Kigali</p>
+              <h1 className="font-playfair text-xl md:text-2xl font-bold text-primary">Feels Coffee</h1>
+              <p className="font-dancing text-xs text-muted-foreground -mt-1 hidden sm:block">Kigali</p>
             </div>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-8">
             {navItems.map((item) => (
-              <a
+              <button
                 key={item.name}
-                href={item.href}
+                onClick={() => handleNavClick(item.href)}
                 className="font-inter text-foreground hover:text-primary transition-all duration-200 font-medium story-link"
               >
                 {item.name}
-              </a>
+              </button>
             ))}
-            <Button variant="default" className="bg-gradient-coffee text-primary-foreground hover-lift">
+            <Button 
+              variant="default" 
+              className="bg-gradient-coffee text-primary-foreground hover-lift font-inter font-semibold"
+              onClick={() => handleNavClick('#contact')}
+            >
               Book a Table
             </Button>
           </nav>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu Button - Show on medium screens too */}
           <button
-            className="md:hidden p-2 transition-transform hover:scale-110"
+            className="lg:hidden p-2 transition-transform hover:scale-110 rounded-md hover:bg-secondary/50"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
           >
             {isMenuOpen ? (
               <X className="h-6 w-6 text-foreground" />
@@ -74,24 +87,28 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden mt-4 pb-4 border-t border-border pt-4 animate-fade-in">
-            <div className="flex flex-col space-y-4">
+          <div className="lg:hidden border-t border-border bg-background/95 backdrop-blur-md">
+            <nav className="px-4 py-6 space-y-4">
               {navItems.map((item, index) => (
-                <a
+                <button
                   key={item.name}
-                  href={item.href}
-                  className="font-inter text-foreground hover:text-primary transition-colors duration-200 font-medium animate-slide-in-left"
+                  onClick={() => handleNavClick(item.href)}
+                  className="block w-full text-left font-inter text-foreground hover:text-primary transition-colors duration-200 font-medium py-2 animate-slide-in-left"
                   style={{ animationDelay: `${index * 0.1}s` }}
-                  onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
-                </a>
+                </button>
               ))}
-              <Button variant="default" className="bg-gradient-coffee text-primary-foreground w-fit animate-slide-in-left" style={{ animationDelay: '0.6s' }}>
+              <Button 
+                variant="default" 
+                className="w-full bg-gradient-coffee text-primary-foreground font-inter font-semibold animate-slide-in-left mt-4" 
+                style={{ animationDelay: '0.6s' }}
+                onClick={() => handleNavClick('#contact')}
+              >
                 Book a Table
               </Button>
-            </div>
-          </nav>
+            </nav>
+          </div>
         )}
       </div>
     </header>

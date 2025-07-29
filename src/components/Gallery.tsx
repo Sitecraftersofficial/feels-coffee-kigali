@@ -79,13 +79,14 @@ const Gallery = () => {
         </div>
 
         {/* Category Filter */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-12">
           {categories.map((category) => (
             <Button
               key={category}
               variant={activeCategory === category ? "default" : "outline"}
               onClick={() => setActiveCategory(category)}
-              className={activeCategory === category ? "bg-primary text-primary-foreground" : ""}
+              size="sm"
+              className={`text-xs sm:text-sm ${activeCategory === category ? "bg-primary text-primary-foreground" : ""}`}
             >
               {category}
             </Button>

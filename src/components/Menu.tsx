@@ -123,15 +123,15 @@ const Menu = () => {
 
         {/* Menu Tabs */}
         <Tabs defaultValue="coffee" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mb-8 bg-secondary/50 backdrop-blur-sm">
+          <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mb-8 bg-secondary/50 backdrop-blur-sm h-auto p-1">
             {menuCategories.map((category) => (
               <TabsTrigger 
                 key={category.id} 
                 value={category.id}
-                className="text-xs md:text-sm font-inter flex items-center gap-1 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
+                className="text-xs md:text-sm font-inter flex flex-col md:flex-row items-center gap-1 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-2 px-2"
               >
-                <span className="text-lg">{category.icon}</span>
-                <span className="hidden md:inline">{category.name.split(' ')[0]}</span>
+                <span className="text-base md:text-lg">{category.icon}</span>
+                <span className="text-xs md:text-sm">{category.name.split(' ')[0]}</span>
               </TabsTrigger>
             ))}
           </TabsList>
