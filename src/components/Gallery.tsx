@@ -152,7 +152,10 @@ const Gallery = () => {
               delicious food, and exceptional coffee that makes Feels Coffee special.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-primary text-primary-foreground">
+              <Button 
+                className="bg-primary text-primary-foreground"
+                onClick={() => window.open('https://drive.google.com/file/d/1JlKq7DD127b6hLgztV6aUefriTxR5_aK/view?fbclid=PAZXh0bgNhZW0CMTEAAad0K9NmHV9K0AcrfCbNKToUEPrzURTWm0mqiaOLm0ih63n_tIzKuoSNMYjQYQ_aem_vsjUZO9u-ZeHL0kcC3yvyQ', '_blank')}
+              >
                 View Our Menu
               </Button>
               <Button variant="outline">

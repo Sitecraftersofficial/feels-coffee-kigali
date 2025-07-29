@@ -48,10 +48,19 @@ const Hero = () => {
         
         {/* Call to Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in max-w-md mx-auto" style={{ animationDelay: '0.5s' }}>
-          <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground hover-lift font-inter font-semibold">
+          <Button 
+            size="lg" 
+            className="bg-accent hover:bg-accent/90 text-accent-foreground hover-lift font-inter font-semibold"
+            onClick={() => window.open('https://drive.google.com/file/d/1JlKq7DD127b6hLgztV6aUefriTxR5_aK/view?fbclid=PAZXh0bgNhZW0CMTEAAad0K9NmHV9K0AcrfCbNKToUEPrzURTWm0mqiaOLm0ih63n_tIzKuoSNMYjQYQ_aem_vsjUZO9u-ZeHL0kcC3yvyQ', '_blank')}
+          >
             View Full Menu
           </Button>
-          <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground hover-lift font-inter font-semibold">
+          <Button 
+            size="lg" 
+            variant="outline" 
+            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground hover-lift font-inter font-semibold"
+            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Book a Table
           </Button>
         </div>
