@@ -51,16 +51,16 @@ const Header = () => {
         ? 'bg-background/95 backdrop-blur-md border-b border-border shadow-coffee' 
         : 'bg-transparent'
     }`}>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 md:h-20">
+      <div className="container mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-14 sm:h-16 md:h-18 lg:h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-3 group cursor-pointer" onClick={() => handleNavClick('#home')}>
+          <div className="flex items-center space-x-2 sm:space-x-3 group cursor-pointer" onClick={() => handleNavClick('#home')}>
             <div className="relative">
-              <Coffee className="h-7 w-7 md:h-8 md:w-8 text-primary transition-transform group-hover:rotate-12" />
-              <div className="absolute -top-1 -right-1 w-2 h-3 bg-accent/30 rounded-full animate-steam"></div>
+              <Coffee className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 text-primary transition-transform group-hover:rotate-12" />
+              <div className="absolute -top-1 -right-1 w-1.5 h-2.5 sm:w-2 sm:h-3 bg-accent/30 rounded-full animate-steam"></div>
             </div>
             <div>
-              <h1 className="font-playfair text-xl md:text-2xl font-bold text-primary">Feels Coffee</h1>
+              <h1 className="font-playfair text-lg sm:text-xl md:text-2xl font-bold text-primary">Feels Coffee</h1>
               <p className="font-dancing text-xs text-muted-foreground -mt-1 hidden sm:block">Kigali</p>
             </div>
           </div>
@@ -101,7 +101,7 @@ const Header = () => {
 
         {/* Mobile Navigation - Full Screen Overlay */}
         {isMenuOpen && (
-          <div className="lg:hidden fixed inset-0 top-16 md:top-20 bg-background/98 backdrop-blur-md z-40 border-t border-border">
+          <div className="lg:hidden fixed inset-0 top-14 sm:top-16 md:top-18 lg:top-20 bg-background/98 backdrop-blur-md z-40 border-t border-border">
             <nav className="px-4 py-8 space-y-6 h-full overflow-y-auto">
               {navItems.map((item, index) => (
                 <button
