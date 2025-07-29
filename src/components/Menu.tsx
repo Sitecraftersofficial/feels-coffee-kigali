@@ -144,8 +144,8 @@ const Menu = () => {
             alt="Feels Coffee Menu Showcase" 
             className="w-full h-64 md:h-80 object-cover rounded-lg shadow-coffee hover-lift"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-end justify-center">
-            <p className="text-primary-foreground font-dancing text-2xl mb-8">Crafted with Love</p>
+          <div className="absolute inset-0  bg-gradient-to-t from-black/80 to-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-end justify-center">
+            <p className="text-primary-foreground group-hover:text-yellow-50 font-dancing text-2xl mb-8">Crafted with Love</p>
           </div>
         </div>
 

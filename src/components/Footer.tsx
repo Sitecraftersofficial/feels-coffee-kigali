@@ -135,16 +135,19 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="font-inter text-muted-foreground text-sm text-center md:text-left">
               © {currentYear} Feels Coffee Kigali. All rights reserved.
-              <span className="font-dancing text-accent mx-2">Made with ❤️ in Rwanda</span>
             </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="font-inter text-muted-foreground hover:text-foreground text-sm transition-colors story-link">
-                Privacy Policy
+
+           <p className="font-dancing text-accent mx-2">
+              Made with ❤️ in Rwanda by the{" "}
+              <a 
+                href="https://www.sitecraftersz.co/" 
+                className="underline" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                Sitecrafters Team
               </a>
-              <a href="#" className="font-inter text-muted-foreground hover:text-foreground text-sm transition-colors story-link">
-                Terms of Service
-              </a>
-            </div>
+            </p>
           </div>
         </div>
       </div>

@@ -112,10 +112,10 @@ const Gallery = () => {
                     alt={image.alt}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black to-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                     <div className="p-4 text-primary-foreground">
-                      <p className="font-semibold">{image.alt}</p>
-                      <p className="text-sm opacity-90">{image.category}</p>
+                      <p className="font-semibold group-hover:text-yellow-50">{image.alt}</p>
+                      <p className="text-sm opacity-90 group-hover:text-yellow-50/70">{image.category}</p>
                     </div>
                   </div>
                 </div>
