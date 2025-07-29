@@ -86,7 +86,11 @@ const Gallery = () => {
               variant={activeCategory === category ? "default" : "outline"}
               onClick={() => setActiveCategory(category)}
               size="sm"
-              className={`text-xs sm:text-sm ${activeCategory === category ? "bg-primary text-primary-foreground" : ""}`}
+              className={`text-xs sm:text-sm transition-all duration-200 ${
+                activeCategory === category 
+                  ? "bg-primary text-primary-foreground shadow-warm" 
+                  : "hover:scale-105 hover:shadow-coffee"
+              }`}
             >
               {category}
             </Button>
@@ -153,13 +157,14 @@ const Gallery = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
-                className="bg-primary text-primary-foreground"
+                className="bg-primary text-primary-foreground hover:shadow-warm hover:scale-105 transition-all duration-200"
                 onClick={() => window.open('https://drive.google.com/file/d/1JlKq7DD127b6hLgztV6aUefriTxR5_aK/view?fbclid=PAZXh0bgNhZW0CMTEAAad0K9NmHV9K0AcrfCbNKToUEPrzURTWm0mqiaOLm0ih63n_tIzKuoSNMYjQYQ_aem_vsjUZO9u-ZeHL0kcC3yvyQ', '_blank')}
               >
                 View Our Menu
               </Button>
               <Button 
                 variant="outline"
+                className="hover:scale-105 hover:shadow-coffee transition-all duration-200"
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Make a Reservation

@@ -14,6 +14,20 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Prevent body scroll when menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    
+    // Cleanup on unmount
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMenuOpen]);
+
   const navItems = [
     { name: 'Home', href: '#home' },
     { name: 'Menu', href: '#menu' },
@@ -85,15 +99,15 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Navigation - Full Screen Overlay */}
         {isMenuOpen && (
-          <div className="lg:hidden border-t border-border bg-background/95 backdrop-blur-md">
-            <nav className="px-4 py-6 space-y-4">
+          <div className="lg:hidden fixed inset-0 top-16 md:top-20 bg-background/98 backdrop-blur-md z-40 border-t border-border">
+            <nav className="px-4 py-8 space-y-6 h-full overflow-y-auto">
               {navItems.map((item, index) => (
                 <button
                   key={item.name}
                   onClick={() => handleNavClick(item.href)}
-                  className="block w-full text-left font-inter text-foreground hover:text-primary transition-colors duration-200 font-medium py-2 animate-slide-in-left"
+                  className="block w-full text-left font-inter text-lg text-foreground hover:text-primary hover:bg-secondary/30 transition-all duration-200 font-medium py-4 px-2 rounded-lg animate-slide-in-left hover:scale-105"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   {item.name}
@@ -101,7 +115,7 @@ const Header = () => {
               ))}
               <Button 
                 variant="default" 
-                className="w-full bg-gradient-coffee text-primary-foreground font-inter font-semibold animate-slide-in-left mt-4" 
+                className="w-full bg-gradient-coffee text-primary-foreground font-inter font-semibold animate-slide-in-left mt-8 hover:shadow-warm hover:scale-105 transition-all duration-200" 
                 style={{ animationDelay: '0.6s' }}
                 onClick={() => handleNavClick('#contact')}
               >
