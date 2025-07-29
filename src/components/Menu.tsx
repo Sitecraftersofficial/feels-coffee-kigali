@@ -109,7 +109,7 @@ const Menu = () => {
         { name: 'Passion Fruit Margarita', description: 'Local passion fruit margarita', price: '10,000 RWF' },
         { name: 'Long Island', description: 'Classic Long Island iced tea', price: '10,000 RWF' },
         { name: 'Gin Tonic', description: 'Premium gin and tonic', price: '7,500 RWF' },
-        { name: 'Dark Wine', description: 'Glass of dark wine', price: '7,000 RWF' },
+        { name: 'White Wine', description: 'Glass of white wine', price: '7,000 RWF' },
         { name: 'Red Wine', description: 'Glass of red wine', price: '7,000 RWF' },
         { name: 'Heineken', description: 'Premium beer', price: '2,000 RWF', popular: true },
         { name: 'Dawa', description: 'Traditional honey-based cocktail', price: '10,000 RWF' },
