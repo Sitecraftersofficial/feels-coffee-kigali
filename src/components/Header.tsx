@@ -52,7 +52,7 @@ const Header = () => {
         : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-14 sm:h-16 md:h-18 lg:h-20">
+        <div className="flex items-center justify-between h-20 md:h-18 lg:h-20">
           {/* Logo */}
           <div className="flex items-center space-x-2 sm:space-x-3 group cursor-pointer" onClick={() => handleNavClick('#home')}>
             <div className="relative">
@@ -101,7 +101,7 @@ const Header = () => {
 
         {/* Mobile Navigation - Full Screen Overlay */}
 {isMenuOpen && (
-  <div className="lg:hidden fixed inset-x-0 top-15 z-40 bg-background border-t border-border">
+  <div className="lg:hidden fixed inset-x-0  z-40 bg-background border-t border-border">
     <nav className="px-4 py-8 space-y-6 h-[calc(100vh-5rem)] overflow-y-auto">
       {navItems.map((item, index) => (
         <button
