@@ -1,7 +1,7 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Coffee, Users, Laptop, Heart } from 'lucide-react';
 import terraceView from '@/assets/terrace-view.jpg';
-import coffeeBeans from '@/assets/coffee-beans.jpg';
+import coffee from '@/assets/coffee.jpg';
 
 const About = () => {
   const features = [
@@ -70,8 +70,8 @@ const About = () => {
               className="rounded-lg shadow-warm w-full h-48 object-cover"
             />
             <img 
-              src={coffeeBeans} 
-              alt="Rwandan Coffee Beans" 
+              src={coffee} 
+              alt="Coffee at Feels Coffee" 
               className="rounded-lg shadow-warm w-full h-48 object-cover mt-8"
             />
           </div>

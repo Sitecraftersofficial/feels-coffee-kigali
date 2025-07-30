@@ -5,7 +5,9 @@ import { X } from 'lucide-react';
 import cafeHero from '@/assets/cafe-hero.jpg';
 import menuShowcase from '@/assets/menu-showcase.jpg';
 import terraceView from '@/assets/terrace-view.jpg';
-import coffeeBeans from '@/assets/coffee-beans.jpg';
+import drinks from '@/assets/drinks.jpg';
+import coffee from '@/assets/coffee.jpg';
+import laptopFriendly from '@/assets/laptopfriendly.jpg';
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -18,7 +20,7 @@ const Gallery = () => {
     },
     {
       src: menuShowcase,
-      alt: 'Coffee and Pastries',
+      alt: 'Burger and Refreshing Drinks',
       category: 'Food & Drinks'
     },
     {
@@ -27,32 +29,17 @@ const Gallery = () => {
       category: 'Outdoor Seating'
     },
     {
-      src: coffeeBeans,
-      alt: 'Fresh Rwandan Coffee Beans',
-      category: 'Coffee'
-    },
-    {
-      src: cafeHero,
-      alt: 'Cozy Seating Area',
-      category: 'Interior'
-    },
-    {
-      src: menuShowcase,
-      alt: 'Signature Drinks',
+      src: drinks,
+      alt: 'Refreshing Drinks',
       category: 'Food & Drinks'
     },
     {
-      src: terraceView,
-      alt: 'Outdoor Dining Experience',
-      category: 'Outdoor Seating'
-    },
-    {
-      src: coffeeBeans,
-      alt: 'Local Coffee Sourcing',
+      src: coffee,
+      alt: 'Coffee',
       category: 'Coffee'
     },
     {
-      src: cafeHero,
+      src: laptopFriendly,
       alt: 'Laptop-Friendly Workspace',
       category: 'Work Environment'
     }

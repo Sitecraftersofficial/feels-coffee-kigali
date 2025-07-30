@@ -137,15 +137,22 @@ const Menu = () => {
           </p>
         </div>
 
-        {/* Featured Image */}
-        <div className="mb-16 relative group">
-          <img 
-            src={menuShowcase} 
-            alt="Feels Coffee Menu Showcase" 
-            className="w-full h-64 md:h-80 object-cover rounded-lg shadow-coffee hover-lift"
-          />
-          <div className="absolute inset-0  bg-gradient-to-t from-black/80 to-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-end justify-center">
-            <p className="text-primary-foreground group-hover:text-yellow-50 font-dancing text-2xl mb-8">Crafted with Love</p>
+        {/* Featured Image as Background */}
+        <div className="mb-16 relative group h-64 md:h-80 rounded-lg overflow-hidden shadow-coffee">
+          {/* Background Image */}
+          <div
+            className="absolute inset-0 bg-center bg-cover"
+            style={{ backgroundImage: `url(${menuShowcase})` }}
+          >
+            {/* Always-visible Gradient Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-black/70 grouphover:from-black/90 duration-700 group-hover:to-black/75"></div>
+          </div>
+
+          {/* Hover Text (appears on hover only) */}
+          <div className="absolute inset-0 flex items-end justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-10">
+            <p className="text-primary-foreground group-hover:text-yellow-50 group-hover:animate-slide-in-left font-dancing text-2xl mb-8">
+              Crafted with Love
+            </p>
           </div>
         </div>
 
