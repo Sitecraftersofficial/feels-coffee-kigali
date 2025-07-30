@@ -63,32 +63,29 @@ const Contact = () => {
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="name">Name *</Label>
-                    <Input
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                      placeholder="Your full name"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="email">Email *</Label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                      placeholder="your@email.com"
-                    />
-                  </div>
+                <div className="space-y-2">
+                  <Label htmlFor="name">Name *</Label>
+                  <Input
+                    id="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                    placeholder="Your full name"
+                  />
                 </div>
-
+                <div className="space-y-2">
+                  <Label htmlFor="email">Email *</Label>
+                  <Input
+                    id="email"
+                    name="email"
+                    type="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    placeholder="your@email.com"
+                  />
+                </div>
                 <div className="space-y-2">
                   <Label htmlFor="phone">Phone</Label>
                   <Input
@@ -218,15 +215,6 @@ const Contact = () => {
                   Follow <strong>@feels_coffeexstudio</strong> for daily updates, 
                   new menu items, and behind-the-scenes content!
                 </p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-gradient-coffee text-primary-foreground">
-              <CardContent className="p-6 text-center">
-                <h3 className="text-xl font-semibold mb-3">Business Hours</h3>
-                <p className="text-lg mb-2">Monday - Sunday</p>
-                <p className="text-2xl font-bold">7:30 AM - 11:00 PM</p>
-                <p className="mt-3 opacity-90">Open every day of the year!</p>
               </CardContent>
             </Card>
           </div>

@@ -156,7 +156,7 @@ const Menu = () => {
               <TabsTrigger 
                 key={category.id} 
                 value={category.id}
-                className="text-xs md:text-sm font-inter flex flex-col md:flex-row items-center gap-1 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-2 px-2"
+                className="text-xs md:text-sm font-inter flex flex-col md:flex-row items-center gap-1 data-[state=active]:bg-primary data-[state=active]:text-black py-2 px-2"
               >
                 <span className="text-base md:text-lg">{category.icon}</span>
                 <span className="text-xs md:text-sm">{category.name.split(' ')[0]}</span>

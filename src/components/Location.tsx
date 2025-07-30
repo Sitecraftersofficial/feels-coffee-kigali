@@ -87,29 +87,6 @@ const Location = () => {
                 </div>
               </CardContent>
             </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center text-primary">
-                  <Phone className="h-5 w-5 mr-2" />
-                  Contact Information
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <div className="flex items-center">
-                  <Phone className="h-4 w-4 text-accent mr-3" />
-                  <span className="text-foreground">+250 788 123 456</span>
-                </div>
-                <div className="flex items-center">
-                  <Mail className="h-4 w-4 text-accent mr-3" />
-                  <span className="text-foreground">hello@feelscoffee.rw</span>
-                </div>
-                <p className="text-muted-foreground mt-4">
-                  Have questions or want to make a reservation? Don't hesitate to call or email us. 
-                  We're always happy to help!
-                </p>
-              </CardContent>
-            </Card>
           </div>
 
           {/* Map Embed */}
@@ -130,29 +107,6 @@ const Location = () => {
                     referrerPolicy="no-referrer-when-downgrade"
                     title="Feels Coffee Location"
                   ></iframe>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Directions */}
-            <Card className="mt-6">
-              <CardHeader>
-                <CardTitle className="text-primary">Getting Here</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-3">
-                  <p className="text-muted-foreground">
-                    <strong className="text-foreground">By Car:</strong> Take KG-628 Street in Rugando. 
-                    Look for our sign on the left side.
-                  </p>
-                  <p className="text-muted-foreground">
-                    <strong className="text-foreground">By Public Transport:</strong> Take any bus to Rugando 
-                    and ask for KG-628 Street. We're a short walk from the main road.
-                  </p>
-                  <p className="text-muted-foreground">
-                    <strong className="text-foreground">By Motorcycle Taxi:</strong> Show the driver this address: 
-                    "KG-628 St, Rugando, Kigali"
-                  </p>
                 </div>
               </CardContent>
             </Card>

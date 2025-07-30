@@ -35,9 +35,6 @@ const About = () => {
             <h2 className="font-playfair text-4xl md:text-6xl font-bold text-primary mb-6 animate-fade-in">
               About Feels Coffee
             </h2>
-            <div className="absolute -top-4 -right-8 opacity-10">
-              <div className="w-16 h-20 bg-primary rounded-full transform rotate-12"></div>
-            </div>
           </div>
           <p className="font-inter text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             More than just a café, Feels Coffee is Kigali's 

@@ -88,7 +88,7 @@ const Gallery = () => {
               size="sm"
               className={`text-xs sm:text-sm transition-all duration-200 ${
                 activeCategory === category 
-                  ? "bg-primary text-primary-foreground shadow-warm" 
+                  ? "bg-primary text-black shadow-warm" 
                   : "hover:scale-105 hover:shadow-coffee"
               }`}
             >
