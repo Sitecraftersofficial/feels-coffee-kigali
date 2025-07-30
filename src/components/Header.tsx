@@ -101,7 +101,7 @@ const Header = () => {
 
         {/* Mobile Navigation - Full Screen Overlay */}
 {isMenuOpen && (
-  <div className="lg:hidden fixed inset-x-0 top-15 z-40 bg-background/95 backdrop-blur-md border-t border-border">
+  <div className="lg:hidden fixed inset-x-0 top-15 z-40 bg-background border-t border-border">
     <nav className="px-4 py-8 space-y-6 h-[calc(100vh-5rem)] overflow-y-auto">
       {navItems.map((item, index) => (
         <button
